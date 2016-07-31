@@ -1,0 +1,83 @@
+div.signup input[type=text],input[type=date],input [type=number]
+		{
+			padding:5px 20px;
+			border-radius: 15px;
+			background-color: rgb(150,200,230);
+			background-repeat: no-repeat;
+			font-size:20px;
+			width:20%;
+			color:rgb(30,30,20);
+			margin-left:700px;
+			margin-bottom: 10px;
+			border:1px solid grey;
+		}
+		div.signup input[type=text]:hover,input[type=date]:hover,input [type=text]:hover,input[type=checkbox]:hover
+		{
+			background-color:cyan;
+		}
+		/*#connecting_world
+		{
+			/*float:left;
+			opacity:0.6;
+
+		}*/
+		div.signup
+		{
+			margin:10px 10px;
+			z-index: 1;
+			background-image: url('/home/saqib/Desktop/images/IMG_20160517_110139.jpg');
+			opacity:0.8;
+			display: block;
+			height:500px;
+		}
+		#top
+		{
+			margin-left:700px;
+		}
+		#userid
+		{
+			margin-top:5px;
+			width:40%;
+
+		}
+		div.signup input[type=date]
+		{
+			margin-top:5px;
+			margin-right: 10px;
+		}
+		#country
+		{
+			width:60px;
+			border:1px solid grey;
+			padding:5px 10px;
+			border-radius: 15px;
+			background-color: rgb(150,200,230);
+			color:rgb(30,30,20);
+		}
+		.signup input [type=checkbox]
+		{
+			border:1px solid black;
+		}
+		.signup input[type=submit]
+		{
+			padding:5px 10px;
+			margin-left:730px;
+			background-color: rgb(10,250,10);
+			color:white;
+			font-size: 20px;
+			border-radius: 10px;
+			cursor:pointer;
+			align:center;
+		}
+		.signup input[type=submit]:hover
+		{
+			background-color: white;
+			color:rgb(10,240,20);
+			border:2px solid grey;
+		}
+		#footr
+		{
+			font-style:italic;
+			color:darkblue;
+		}
+	
