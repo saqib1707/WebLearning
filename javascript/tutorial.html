@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<style>
+	#exp
+	{
+		background-color: lightgrey;
+		color: green;
+		font-size: 20px;
+		padding :10px 20px;
+		border-radius: 20px;
+		border: 2px solid pink;
+		text-indent: 20px;
+	}
+
+</style>
+<body>
+	<form name="myform" action="/home/saqib/Music/sd/dd/dd2.jpg" method="post" onsubmit="return  formValidate()">
+		Enter ur name:<br>
+		<input type="text" name="fname" value=""><br>
+		Enter roll no:<br>
+		<input type="number" name="rollno" max="100" min="1" id="demo"><br>
+		Your experience:
+		<textarea name="experience" rows="5" cols="50" id="exp" ></textarea>
+		<input type="submit" name="Submit">
+		<p id="para"></p>
+	</form>
+	<script>
+		function formValidate()
+		{
+			var x=document.forms["myform"]["fname"].value;
+			if(x==null || x=="")
+			{
+				alert("Enter ur name bitch:");
+				return false;
+			}
+			var txt="";
+			if(document.getElementById("demo").validity.rangeOverflow)
+			{
+				txt="value too large";
+			}
+			if(document.getElementById("demo").validity.rangeUnderflow)
+			{
+				txt="value too small";
+			}
+			document.getElementById("para").innerHTML=txt;
+
+		}
+	</script>
+</body>
+</html>
