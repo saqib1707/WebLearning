@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Copy Contents</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function copy()
+		{		
+				if(document.getElementById('field1').value=="")
+				{
+					alert("Please enter the first blank");
+				}
+				else
+				document.getElementById("field2").value=document.getElementById("field1").value;
+		}
+	</script>
+	Enter any text to copy:<br>
+	<input type="text" id="field1" name="copy1" value=""  required><br>
+	Copied Field:<br>
+	<input type="text" id="field2" name="copy2"  value=""><br>
+	<button onclick="copy()">Click here</button>
+</body>
+</html>

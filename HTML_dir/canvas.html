@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas example</title>
+</head>
+<body>
+	<div id="img1">
+	<img id="1" src="FB_IMG_1454791265129.jpg" alt="my love I am sorry" width="200" height="200">
+	</div>
+	<button onclick="f()">click here</button>
+	<canvas align ="center" id="mycanvas" width="200" height="200" style="border:1px solid black;"></canvas>
+	<script>
+		function f()
+		{
+			var c=document.getElementById("mycanvas");
+			var ctx=c.getContext("2d");
+			var img=document.getElementById("1");
+			ctx.drawImage(img,0,0);
+		}
+	</script>
+</body>
+</html>

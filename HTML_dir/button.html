@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>My Buttons</title>
+	<link rel="stylesheet" type="text/css" href="button_style.css">
+</head>
+<body>
+<div class="link">
+<h4 id="h4">Click the below button to know your <b>future</b> destiny</h4>
+<a href="game.html" target="_blank">Link to your DESTINY</a>
+</div><br><br><br>
+
+<div class="buttons">
+	<button onclick="myfunction(1)" class="btn1">HTML</button>
+	<button onclick="myfunction(2)" class="btn2">CSS</button>
+	<button onclick="myfunction(3)" class="btn3">JAVASCRIPT</button>
+	<button onclick="myfunction(4)" class="btn4">PHP</button>
+</div><br><br><br>
+	<script type="text/javascript">
+		function myfunction(num)
+		{	
+			var x=document.getElementById("dd1");
+			var y=document.getElementById("dd2");
+			var z=document.getElementById("dd3");
+			var w=document.getElementById("dd4");
+			switch(num)
+			{
+				case 1:x.innerHTML="<img src='/home/saqib/Music/sd/dd/dd2.jpg' alt='dd' width='150px' height='150px'>";
+						break;
+				case 2:y.innerHTML="<img src='/home/saqib/Music/sd/dd/FB_IMG_1455082111329.jpg' alt='dd' width='150px' height='150px'>";
+						break;
+				case 3:z.innerHTML="<img src='/home/saqib/Music/sd/dd/12974394_812899568853868_6741314250770661775_n.jpg' alt='dd' width='150px' height='150px'>";
+						break;
+				case 4:w.innerHTML="<img src='/home/saqib/Music/sd/dd/Screenshot_2015-12-26-18-27-53.png' alt='dd' width='150px' height='150px'>";
+						break;
+			}
+			
+		}
+	</script>
+	<br><br>
+	<div class="dd">
+	<span id="dd1"></span>
+	<span id="dd2"></span>
+	<span id="dd3"></span>
+	<span id="dd4"></span>
+	</div>
+	
+</body>
+</html>

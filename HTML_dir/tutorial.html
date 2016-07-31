@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		table,th,td{
+			align:center;
+		}
+		th,td{
+			padding:10px;
+			border:1px solid lightgrey;
+			border-collapse:collapse;
+
+		}
+		th{
+			text-align:left;
+		}
+		table#demo tr:nth-child(even)
+		{
+			background-color: rgb(250,250,250);
+		}
+		table#demo tr:nth-child(odd){
+			background-color: rgb(220,220,220);
+		}
+	</style>
+</head>
+<body>
+	<h1 align="center">My first table</h1>
+	<table id="demo" style="width:100%">
+	<caption>Applicants Details</caption>
+		<tr>
+			<th>Name</th>
+			<th>LDAP ID</th>
+			<th>Dept.</th>
+			<th colspan="2">Mobile No</th>
+		</tr>
+		<tr>
+			<td>Prakhar Jain</td>
+			<td>150040032</td>
+			<td>Civil</td>
+			<td>90381 20922</td>
+			<td>9038685126</td>
+		</tr>
+		<tr>
+			<td>Ritik Madan</td>
+			<td>15D070034</td>
+			<td>Elec</td>
+			<td>8981724472</td>
+			<td>8272916072</td>
+		</tr>
+	</table>
+	<br><br>
+	<p id="cookie"></p>
+	<button onclick="myfunction()">Click here</button>
+	<script>
+	function myfunction()
+	{
+		document.cookie="name=Saqib Azim;age=19;roomie=Pranav Sankhe";
+		var x=document.cookie;
+		document.getElementById("cookie")=x;
+	}	
+	</script>
+	Enter choice here:
+	<input type="text" placeholder="Enter ur choice" >
+
+	</body>
+</html>

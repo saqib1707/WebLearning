@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Geolocation finder
+	</title>
+</head>
+<body>
+	<p id="demo" ></p>
+	<p id="2" ></p>
+
+	<button onclick="getLocation()">Click here to know ur location</button>
+
+	<div id="mapholder"></div>
+
+	<script type="text/javascript">
+		var x=document.getElementById("demo");
+		function getLocation()
+		{
+			if(navigator.geolocation)
+			{
+				navigator.geolocation.getCurrentPosition(showPosition,showError);
+			}
+			else
+			{
+				x.innerHTML="Geolocation is not supported on this browser";
+			}
+		}
+		function showPosition(position)
+		{
+			var latloc=position.coords.latitude+","+position.coords.longitude;
+			var img_url="http://maps.googleapis.com/maps/api/staticmap?center="+latloc+"&zoom=14&size=400*300&sensor=false";
+			document.getElementById("mapholder").innerHTML="<img src='"+img_url+"'>";
+		}
+		function showError(error)
+		{
+			switch(error.code)
+			{
+				case error.PERMISSION_DENIED:
+				x.innerHTML="User denied the approval for geolocation";
+				break;
+				case error.POSITION_UNAVAILABLE:
+				x.innerHTML="Location not available";
+				break;
+				case error.TIMEOUT:
+				x.innerHTML="Request to get user location timed out";
+				break;
+				case error.UNKNOWN_ERROR:
+				x.innerHTML="Unknown error";
+				break;
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Electronics Club ,IIT BOMBAY</title>
+	<link rel="shortcut icon" href="/home/saqib/Downloads/favicon.ico"/>
+	<style>
+	div.container_1 {
+		background-image:url('/home/saqib/Downloads/Electronics_1920x1080.jpg'); 
+		-moz-background-size:cover;
+		background-repeat:no-repeat;
+		height:500px;
+		width:100%;
+	}
+	.table1
+	{
+		margin-left:20px;
+		width:40%;
+		float:right;
+	}
+	th
+	{
+		padding:10px 0px;
+	}
+	th a.link:hover
+	{
+		color:blue;
+		background-color: rgb(150,150,150);
+		border-radius: 0px 0px 10px 0px;
+	}
+	div.logo
+	{
+		padding:15px;
+		display:inline-block;
+	}
+	a#logo_label
+	{
+		text-decoration: none;
+		color:rgb(120,230,150);
+	}
+	a#logo_label:hover
+	{
+		color:rgb(200,250,120);
+	}
+	img:hover
+	{
+		cursor:crosshair;
+	}
+	.description
+	{
+		width:80%;
+		margin:auto;
+	}
+	.heading
+	{
+		text-decoration: none;
+		color:rgb(60,60,60);
+		font-family: 'open sans','Helvetica Neau',Helvetica,Arial,sans-serif;
+		font-weight:800;
+		
+	}
+	.text
+	{
+		font-size:20px;
+		color:rgb(50,50,50);
+		line-height: 2;
+		text-decoration: none;
+	}
+	.inner_container
+	{
+		padding:40px;
+	}
+
+	p a.link
+	{
+		font-size:22px;
+		text-decoration: none;
+	}
+	th a.link
+	{
+		text-decoration: none;
+		color:cyan;
+		font-size:16px;
+		padding:10px;
+	}
+	p a.link:hover,ul li a.link:hover
+	{
+		text-decoration: underline;
+		color:rgb(100,240,150);
+	}
+	div a h1.heading:hover{
+		color:cyan;
+		text-decoration: none;
+	}
+	p.posted_by
+	{
+		font-style:italic;
+		color:grey;
+	}
+	a.text:hover
+	{
+		color:cyan;
+		text-decoration: underline;
+	}
+	</style>
+</head>
+
+
+
+<body style="font-family:'Marcellus',serif;">
+
+<div class="container_1">
+	<div class="logo">
+		<div>
+		<img style="float:left;padding-right:10px;" src="/home/saqib/Desktop/images/elec_logo.png" width="50px" height="50px" >
+		<div  style="font-size:17px;display: inline-block;padding-top:12px;"><span ><a id="logo_label" href="/home/saqib/Desktop/Saqib/Code/HTML_dir/NTSS_page.html">Electronics Club of IIT Bombay</a></span></div>
+		</div>
+	</div>
+	<table class="table1">
+		<tr>
+		<th><a class="link" href="/home/saqib/Desktop/Saqib/Code/HTML_dir/NTSS_page.html">Home</a></th>
+		<th><a class="link" href="">About</a></th>
+		<th><a class="link" href="">Contacts</a></th>
+		<th><a class="link" href="">Blog</a></th>
+		<th><a class="link" href="/home/saqib/Desktop/Saqib/Code/HTML_dir/Community_blog.html">Tutorial</a></th>
+		</tr>
+	</table>
+
+	<p></p>
+	<h1 align="center" style="font-size:80px;color:lightgrey;font-family:Verdana,sans-serif;z-index: 1"><b>Community Blog</b></h1>
+	<p align="center" style="color:white;font-size:20px;"><b>Blogs posts contributed by the Electronics Community of IITB</b></p>
+
+</div>
+<div >
+</div>
+
+<div class="description">
+	<div class="inner_container">
+	<div>
+	<a href="#"><h1 class="heading">Deep Learning based Image Classification</h1></a>
+	<a class="text">How deep neural networks can be taught to classify images using deep learning </a>
+	<p class="posted_by">Posted by Yash Bhalgat on May 20, 2016</p>
+	</div>
+	<div>
+		<a href="#"><h1 class="heading">Making of a Burglar alarm</h1></a>
+		<a class="text">Discussing the concepts behind this elementary circuit and then moving on to build it. </a>
+		<p class="posted_by">Posted by Arunabh Ghosh on May 13, 2016</p>
+	</div>
+	<div>
+		<a href="#"><h1 class="heading">Game of Pong</h1></a>
+		<a class="text">Making the classic 'Pong' Game using concept of Shift Registers </a>
+		<p class="posted_by">Posted by Krishna Subramani on May 8, 2016</p>
+	</div>
+	<div>
+		<a href="#"><h1 class="heading">Working of a Digital Light Processing Projector </h1></a>
+		<a class="text">Describing the internals and working mechanism, as found in the How Things Work session </a>
+		<p class="posted_by">Posted by Pranav Sankhe on May 3, 2016</p>
+	</div>
+	<div>
+		<a href="#"><h1 class="heading">Getting Started with Beaglebone Black  </h1></a>
+		<a class="text">Simple tutorial on using the BBB.  </a>
+		<p class="posted_by">Posted by Dhruv Ilesh Shah on April 26, 2016</p>
+	</div>
+</div>
+</div>
+
+<div class="footer">
+	<p align="center"><a href="https://github.com/elec-club-iitb" id="github_logo"><img src="/home/saqib/Desktop/images/github_logo.png" onmouseover="black_github(this)" onmouseout="cyan_github(this)" width="60px" height="60px"></a></p>
+	</div>	
+	<div style="padding:20px;">
+	<p align="center" style="font-size:15px;font-style: italic;color:rgb(128,128,128);">Copyright @ Electronics Club ,IIT Bombay 2016</p>
+	</div>
+
+</div>
+
+<script>
+	function black_github(obj)
+	{
+		obj.src="/home/saqib/Desktop/images/github_logo_hover.png";
+	} 
+	function cyan_github(obj)
+	{
+		obj.src="/home/saqib/Desktop/images/github_logo.png" ;
+	}
+</script>
+</body>
+</html>

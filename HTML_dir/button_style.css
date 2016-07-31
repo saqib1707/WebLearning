@@ -1,0 +1,73 @@
+.btn1,.btn2,.btn3,.btn4
+		{
+			color: white;
+			background-color: green;
+			padding:10px 20px;
+			border:none;
+			border-radius: 5px;
+			font-size: 20px;
+			transition-duration:0.2s;
+			cursor:pointer;
+			float:left;
+			display:inline-block;
+		}
+		.btn1:hover,.btn2:hover,.btn3:hover,.btn4:hover
+		{
+			background-color: lightgrey;
+			color:green;
+			text-decoration: underline;
+		}
+		.btn1:active,.btn2:active,.btn3:active,.btn4:active
+		{
+			background-color:cyan;
+			color:black;
+		}
+
+		div.buttons
+		{
+			margin:0px 400px 0px;
+
+		}
+		div.link
+		{
+			margin:50px 50px;
+		}
+		a:link
+		{
+			background-color:red;
+			color:white;
+			border:none;
+			border-radius:10px;
+			font-style:normal;
+			font-size:20px;
+			padding:10px;
+			display:inline-block;
+			transition-duration: 0.1s;
+			text-decoration: none;
+		}
+		a:visited
+		{
+			background-color: black;
+			color:white;
+			text-decoration: none;
+		}
+		a:hover
+		{
+			background-color: hotpink;
+			color:green;
+			text-decoration: underline;
+			
+		}
+		a:active
+		{
+			background-color: navy;
+			color:orange;
+		}
+		.dd
+		{
+			background-color: rgb(200,200,200);
+			width:650px;
+			height:150px;
+			margin:auto;
+		}
+		

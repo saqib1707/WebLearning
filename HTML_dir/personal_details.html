@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Personal Details
+	</title>
+</head>
+<body>
+	<script>
+		function check()
+		{
+			var x="Please enter:\n";
+			if(document.getElementById("field1").value=="")
+			{
+				x+=">First name\n";
+			}
+			if(document.getElementById("field2").value=="")
+			{
+				x+=">last name\n";
+			}
+			if(document.getElementById("field3").value=="")
+			{
+				x+=">password\n";
+			}
+			if(document.getElementById("field4").value=="")
+			{
+				x+=">confirm password\n";
+			}
+			if(document.getElementById("field5").value=="")
+			{
+				x+=">birthdate \n";
+			}
+			if(document.getElementById("field6").value=="")
+			{
+				x+=">roll no\n";
+			}
+			if(x!="Please enter:\n")
+			{
+				alert(x);
+			}
+			if(document.getElementById("field3").value!="" || document.getElementById("field4").value!="")
+			{
+				if(document.getElementById("field3").value!=document.getElementById("field4").value)
+				{
+					alert("Password don't match\nPlease enter valid password");
+				}
+			}
+		}
+	</script>
+	
+	<form  action="/home/saqib/Desktop/NSS/Plant species/plant_species.odt" method="post" autocomplete="off">
+		<fieldset style="background-color: lightgreen">
+			
+			<legend align ='center'>Personal Details</legend>
+	<ol type='A'>
+
+	<h3 id="demo" align="left" style="color:red;background-color:lightblue;"><strong>Note:</strong>Only if you fill this form completely ,you will be able to see the output</h3>
+
+
+	<li><strong>First Name</strong></li>
+		<input type="text" name="firstname" value=""  id="field1" style="background-color: lightgrey;color:darkred">
+		</input>
+		<br><br>
+
+		<li><strong>Last Name</strong></li>
+		<input type="text" name="lastname" value=""   id="field2" style="background-color: lightgrey;color:darkred">	
+		</input><br><br>
+
+		<li><strong>Password Set</strong></li>
+		<input type="password" name="pwd" value=""  id="field3" style="background-color: lightgrey;color:darkred" maxlength="11" minlength="5">
+		<br><br>
+
+		<li><strong>Confirm Password</strong></li>
+		<input type="password" name="conpwd" value=""  id="field4" style="background-color: lightgrey;color:darkred" maxlength="11" minlength="5">
+		<br><br>
+
+		<li><strong>Choose any number of choices u want</strong></li>
+		<input type="checkbox" name="owner">I have a car<br>
+		<input type="checkbox" name="owner">I have a bike<br>
+		<input type="checkbox" name="owner">I have a cycle<br>
+		<br>
+
+	<li><strong>Birthday</strong><br></li>
+		<input type="date"  name="bday" id="field5" style="background-color: lightgrey;color:darkred">
+		<br><br>
+
+
+	<li><strong>Roll No</strong ><br></li>
+		<input type="text" name="rollno" value=""  id="field6" style="background-color: lightgrey;color:darkred"><br><br>
+
+
+	<li><strong>Year of Study</strong><br></li>
+		<select name="year" style="background-color: lightgrey;color:darkred" >
+			<option value="1st year" selected>Freshie</option>
+			<option value="2nd year">Sophie</option>
+			<option value="3rd year">Thirdie</option>
+			<option value="Final year">Fourthies</option>
+		</select>
+		<br><br><br>
+
+
+	<li><strong>Hostel</strong><br></li>
+		<select name="Hostel" style="background-color: lightgrey;color:darkred">
+			<option value="1" selected>H1</option>
+			<option value="2">H2</option>
+			<option value="3">H3</option>
+			<option value="4">H4</option>
+			<option value="5">H5</option>
+			<option value="6">H6</option>
+			<option value="7">H7</option>
+			<option value="8">H8</option>
+			<option value="9">H9</option>
+			<option value="10">H10</option>
+			<option value="11">H11</option>
+			<option value="12">H12</option>
+		</select><br><br><br>
+
+
+	<li><strong>Project choice</strong><br></li>
+		<input type="radio" name="choice" checked>Raspberry Pi<br>
+		<input type="radio" name="choice" >beagle Board<br>
+		<input type="radio" name="choice">GPS Receiver<br>
+		<input type="radio" name="choice">Plant thread Simulation<br>
+		<br><br><br><br>
+
+
+	<li><strong>Your previous experience</strong></li><br>
+		<textarea name="preference" rows="5" cols="150" style="background-color: lightgrey;color:darkred">
+		</textarea>
+		<br><br>
+
+		<input type="button" onclick="check()" value="click here" style="background-color: orange;color:blue;">Click here before submitting</button>
+		<br><br>
+		</fieldset>
+
+		<br><br>
+		<input type="submit" name="Submit" style="background-color: orange;color: blue;">
+		<br><strong>Submit</strong>
+		
+	</form>
+	
+
+</body>
+</html>

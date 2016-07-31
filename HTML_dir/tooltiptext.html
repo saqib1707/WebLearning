@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	.tooltip
+	{
+		display:inline-block;
+		position: relative;
+		background-color: green;
+		color:white;
+		font-size: 20px;
+		border:2px solid pink;
+		padding:10px 15px;
+		border-radius: 5px;
+	}
+	.tooltip .tooltiptext
+	{
+		background-color: black;
+		color:white;
+		padding:5px 5px;
+		display:none;
+		position:absolute;
+		width:100%;
+		border-radius: 4px;
+		top:30%;
+		left:100%;
+		text-align: center;
+	}
+	.tooltip:hover .tooltiptext
+	{
+		display:block;
+	}
+	.tooltip:hover
+	{
+		background-color: white;
+		color:green;
+	}
+	</style>
+</head>
+<body>
+	<h2 align="center">Learning how to make a tooltip text</h2>
+	<div class="tooltip" ><span align="center">Mouse over me</span>
+		<span class="tooltiptext">Tooltip contents</span>
+	</div>
+</body>
+</html>

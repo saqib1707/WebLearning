@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CS101 IITB</title>
+	<style>
+
+		div.options
+		{
+			border:2px solid red;
+			overflow:auto;
+			margin:5px;
+		}
+		div.heading
+		{
+			background-color:pink;
+		}
+		fieldset.info
+		{
+			background-color: lightgrey;
+			color:darkred;
+			font-style: italic;
+			border:2px solid orange;
+			width:82%;
+			float :right;
+			border-radius: 4px;
+		}
+		span.date
+		{
+			color:black;
+			font-size:15px;
+		}
+		fieldset.lecture
+		{
+			background-color: lightgrey;
+			color:darkred;
+			font-style:italic;
+			border:2px solid orange;
+		}
+	</style>
+</head>
+<body style="background-color: lightyellow;">
+	<div class="heading">
+		<h3 align="center" style="color:black;">Computer Programming and Utilization<br>Jan-Apr 2016</h3>
+		<p align="center" style="font-size:17px"><a href="http://www.cse.iitb.ac.in">Department of Computer Science and Engineering</a><br>
+		<a href="http://iitb.ac.in">IIT BOMBAY</a>
+		</p>
+	</div>
+	<div class="options">
+		
+		<iframe class="iframe" src="cs101_options.html" name="myframe" height="350px" width="15%" >
+		</iframe> 
+		<fieldset class="info">
+			<legend align="center"><strong>Announcements</strong></legend>
+			<p>
+			<ul>
+			<li>	<span class="date" onmouseover="mover(this)" onmouseout="mout(this)">29th Feb</span>:Forms for cribs of graded lab 5 and 6 is here <a href="cs101_crib_form.html" target="blank">Link for form</a>.Please fill the form only if u have reasonable cribs.</li>
+				<br><br>
+			<li>	<span class="date">28th Feb</span>:This week we will have graded lab on the topic of Recursion.Please come prepared.<br><br></li>
+			<li>	<span class="date">26th Feb</span>:Solutions for Quiz-2 is here.<a href="cs101_soln_q2.html" target="_blank" >Solutions quiz-2</a>.Please go through it and report me if u find any discrepancy in solutions or u can suggest ur own alternative answers.<br><br></li>
+			<li><span class="date">25th Feb</span>:We have received some suggestions for alternative answers for endsem.We will cnsider them during correction process.If possible ,I will upload the details of which suggestion we have accepted and which not before the crib session.</li><br>
+			<li><span class="date">22nd Feb</span>:As annunced on 20th feb,we will have a crib session for End Sem and quiz 2 on 1st March (most probably after noon),I am awaiting confirmation of lecture hall booking.</li>
+			</ul>
+			</p>
+		</fieldset>
+	</div>
+	<div>
+		<fieldset class="lecture">
+			<legend align="center" ><strong>Lecture Slides</strong></legend>
+			<ul>
+			<li><span class="date">5th Jan</span>:Lecture 1 slides on <a href="Lecture1_slides" ><span id="link" onmouseover="mover1(this)" onmouseout="mout1(this)">Introduction to Programming</span></a>,<a href="Prutor">Prutor</a>, and <a href="course plan">Course Plan</a></li>
+			<li><span class="date">7th-8th Jan</span>:Lecture 2 slides:<a href="computers work">How Computers work</a></li>
+		</fieldset>
+	</div>
+		<fieldset class="lecture">
+		<legend align="center"><strong>Contacts</strong></legend>
+		<p align="center">
+			<a href="http://www.cse.iitb.ac.in" >Department of Computer science and <br>Engineering ,Indian Institute of Technology<br>-Bombay,Powai,Mumbai 400 076<br> Tel:+91-22-2576 7747,Fax:+91-22-2572 <br>0022</a></p>
+			<p align="center">Copyright @ 2013,CSE,IIT BOMBAY.All rights reserved.</p>
+		</fieldset>
+		<script>
+			function mover(obj)
+			{
+				obj.innerHTML='Feb 29';
+			}
+			function mout(obj)
+			{
+				obj.innerHTML='29th Feb';
+			}
+			function mover1(obj)
+			{
+				
+			}
+		</script>
+</body>
+</html>

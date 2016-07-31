@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Facebook</title>
+	<link rel="stylesheet" type="text/css" href="/home/saqib/Desktop/Saqib/Code/css_dir/fb_heading.css">
+	<link rel="stylesheet" type="text/css" href="/home/saqib/Desktop/Saqib/Code/css_dir/fb_body_style.css">
+</head>
+<body>
+	<div class="container">
+		<img src="/home/saqib/Desktop/images/IMG_20160517_183224.jpg" width="50px" height="50px" id="demo">
+		<div id="heading">facebook</div>
+		<button class="login" onclick="login()">Login</button>
+		<div class="pwd">
+			<span style="color: white;">Password</span><br>
+			<input type="password" name="pwd" value="">
+		</div>
+		<div class="email">
+			<span style="color:white;">Email or Mobile No.</span><br>
+			<input type="text" name="email" value="">
+		</div>
+	</div>
+
+	<div class="signup">
+	<h2 id="top">Create an account</h2>
+	<h5 style="margin-left:700px;">It's free and always will be.</h5>
+	<form  method="post" action="" name="myform" onsubmit="return validateForm()">
+		<input type="text" name="firstname" value="" >
+		<input type="text" name="lastname" value="" ><br><br>
+		<input id="userid" type="text" name="username" value="" ><br><br>
+		<input type="date" name="date">
+		<span id="country"> Country</span>
+		<select name="country">
+		<option value="US" >USA</option>
+		<option value="India" checked>India</option></select>
+		<br><br>
+
+		<input type="text" name="mobile" value=""><br>
+		<input type="checkbox" name="terms" style="margin-left: 700px;">I agree to the <a href=""><b>policy</b></a> and <a href=""><b>terms & condition</b></a >of joining facebook<br><br>
+		<input type="submit" name="submit" value="Create an account">
+	</form>
+	<footer>
+	<p align="center" id="footr">All rights reserved @ Facebook 2013,USA</p>
+	</footer>
+	
+	<script>
+	function validateForm()
+	{
+		var x=document.forms["myform"]["firstname"];
+		var txt="Please Enter:\n";
+		if(x.value==null || x.value=="")
+		{
+			txt+="> first name\n";
+		}
+		x=document.forms["myform"]["lastname"];
+		if(x.value==null || x.value=="")
+		{
+			txt+="> last name\n";
+		}
+		x=document.forms["myform"]["username"];
+		if(x.value==null || x.value=="")
+		{
+			txt+="> user name\n";
+		}
+		x=document.forms["myform"]["date"];
+		if(x.value==null || x.value=="")
+		{
+			txt+="> Birthdate\n";
+		}
+		x=document.forms["myform"]["mobile"];
+		if(x.value==null || x.value=="")
+		{
+			txt+="> Mobile Number\n";
+		}
+		if(txt!="Please Enter:\n")
+		{
+			alert(txt);
+			return false;
+		}
+
+	}
+	</script>
+</body>
+</html>
